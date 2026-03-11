@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { LoginScreen } from '@/app/components/LoginScreen';
-import { StudentDashboard } from '@/app/components/StudentDashboard';
-import { AdminDashboard } from '@/app/components/AdminDashboard';
-import { UserRole, Student, Event, StudentEvent, Submission } from '@/app/types';
-import { initialStudents, initialEvents, initialStudentEvents, initialSubmissions } from '@/app/data/mockData';
+import { LoginScreen } from './components/LoginScreen.tsx';
+import { StudentDashboard } from './components/StudentDashboard';
+import { AdminDashboard } from './components/AdminDashboard';
+import { UserRole, Student, Event, StudentEvent, Submission } from './types';
+import { initialStudents, initialEvents, initialStudentEvents, initialSubmissions } from './data/mockData';
 
 function App() {
   const [currentUser, setCurrentUser] = useState<{ role: UserRole; id: string }>({
